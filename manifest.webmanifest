@@ -1,0 +1,19 @@
+{
+  "name": "AffiAds Mail",
+  "short_name": "AffiAds Mail",
+  "description": "Ton espace personnel pour configurer et ouvrir ta messagerie.",
+  "lang": "fr-FR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f9fc",
+  "theme_color": "#101827",
+  "icons": [
+    {
+      "src": "./icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
