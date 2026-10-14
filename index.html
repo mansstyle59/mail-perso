@@ -32,13 +32,23 @@
 <article class="provider-card"><div class="provider-logo gmail">M</div><div class="provider-copy"><h3>Gmail</h3><p>Créer une adresse Google et consulter tes messages en ligne.</p><a href="https://mail.google.com/" target="_blank" rel="noopener noreferrer">Découvrir Gmail ↗</a></div></article>
 </div>
 <div class="notice"><span class="notice-icon">i</span><p><b>À savoir :</b> GitHub Pages héberge l’interface mais ne crée pas de boîte mail. Une adresse comme <code>toi@tondomaine.fr</code> nécessite un domaine et un fournisseur de messagerie.</p></div></section>
-<section class="section" id="connexion"><div class="section-heading"><div><p class="eyebrow">ÉTAPE 02</p><h2>Accéder à ma boîte mail</h2></div></div>
-<div class="access-panel"><div class="access-icon">↗</div><div class="access-copy"><h3>Ouvrir ma messagerie</h3><p>La connexion s’effectue directement sur le site officiel du fournisseur choisi.</p></div><div class="access-actions"><a class="secondary-btn" href="https://proton.me/mail" target="_blank" rel="noopener noreferrer">Proton</a><a class="secondary-btn" href="https://outlook.live.com/mail/" target="_blank" rel="noopener noreferrer">Outlook</a><a class="secondary-btn" href="https://mail.google.com/" target="_blank" rel="noopener noreferrer">Gmail</a></div></div>
-<p class="small-muted">Cette version est un portail de messagerie : elle ne synchronise pas encore les messages et ne les envoie pas directement.</p></section>
+<section class="section" id="connexion"><div class="section-heading"><div><p class="eyebrow">ÉTAPE 02</p><h2>Connecter Outlook</h2></div><span id="authBadge" class="step-tag">Non connecté</span></div>
+<p class="section-intro">Connecte-toi à Microsoft pour lire, rechercher et envoyer tes e-mails dans AffiAds Mail. L'authentification se fait sur Microsoft ; ton mot de passe n'est jamais saisi dans cette page.</p>
+<div class="mail-controls">
+<div class="mail-toolbar"><button id="connectBtn" class="primary-btn">Connecter mon compte Outlook ↗</button><button id="disconnectBtn" class="secondary-btn" hidden>Se déconnecter</button></div>
+<p id="authStatus" class="small-muted" role="status">Une configuration Microsoft est nécessaire avant la première connexion.</p>
+<div id="mailWorkspace" hidden>
+<div class="mail-toolbar search-toolbar"><input id="searchInput" type="search" placeholder="Rechercher dans mes e-mails" aria-label="Rechercher dans mes e-mails"><button id="searchBtn" class="secondary-btn">Rechercher</button><button id="refreshBtn" class="secondary-btn">Actualiser</button></div>
+<div class="mail-columns"><div><h3>Messages reçus</h3><div id="messageList" class="message-list"><p class="small-muted">Connecte-toi pour afficher tes messages.</p></div></div>
+<div class="message-view"><h3 id="messageTitle">Lire un message</h3><p id="messageMeta" class="small-muted"></p><div id="messageBody" class="message-body">Sélectionne un message dans la liste.</div></div></div>
+<form id="sendForm" class="send-form"><h3>Nouveau message</h3><label for="toInput">Destinataire</label><input id="toInput" type="email" required placeholder="destinataire@exemple.fr"><label for="subjectInput">Objet</label><input id="subjectInput" required maxlength="250" placeholder="Objet du message"><label for="bodyInput">Message</label><textarea id="bodyInput" required rows="5" placeholder="Écris ton message…"></textarea><button class="primary-btn" type="submit">Envoyer l’e-mail</button></form>
+</div></div>
+<div class="notice"><span class="notice-icon">i</span><p>La connexion réelle nécessite l’identifiant public d’une application Microsoft configurée pour cette URL. Aucun secret client ne doit être ajouté au dépôt. Les e-mails sont récupérés depuis Microsoft Graph et ne sont pas enregistrés dans GitHub.</p></div></section>
 <section class="section privacy-section" id="confidentialite"><div class="privacy-icon">⌑</div><div><h2>Ta vie privée d’abord</h2><p>AffiAds Mail ne stocke aucun mot de passe ni secret client. La connexion Outlook passe par Microsoft. Les messages sont chargés depuis Microsoft Graph pour cette session.</p></div></section>
 <footer class="footer"><span>AffiAds <b>Mail</b><i>.</i></span><span>Sans IA · Aucun identifiant enregistré · Version de départ</span></footer>
 </main></div>
 
+<script src="https://alcdn.msauth.net/browser/2.38.4/js/msal-browser.min.js" defer></script>
 <script src="https://alcdn.msauth.net/browser/2.38.4/js/msal-browser.min.js" defer></script>
 <script src="./app.js" defer></script>
 </body></html>
