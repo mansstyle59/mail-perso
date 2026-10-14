@@ -22,33 +22,22 @@
 </aside>
 <main class="main">
 <header class="topbar"><button class="icon-btn mobile-menu" id="menuBtn" aria-label="Ouvrir le menu">☰</button><div class="crumb">Espace personnel <span>/</span> <b>Accueil</b></div><div class="avatar"><img src="./icons/icon.svg" alt="Logo AffiAds Mail"></div></header>
-<section class="hero" id="accueil"><div class="hero-copy"><div class="eyebrow"><span class="status-dot"></span> TON ESPACE PERSONNEL</div><h1>Ton courrier.<br><em>Ton espace. Ta simplicité.</em></h1><p>Bienvenue sur AffiAds Mail : un point d’entrée clair pour configurer ton adresse et accéder à ta messagerie depuis ton iPhone.</p><a class="primary-btn" href="#adresse">Configurer mon adresse <span>→</span></a></div>
+<section class="hero" id="accueil"><div class="hero-copy"><div class="eyebrow"><span class="status-dot"></span> TON ESPACE PERSONNEL</div><h1>Ton courrier.<br><em>Ton espace. Ta simplicité.</em></h1><p>Bienvenue sur AffiAds Mail : un point d’entrée clair pour configurer ton adresse et accéder à ta messagerie depuis ton iPhone.</p><a class="primary-btn" href="https://mail.proton.me/" target="_blank" rel="noopener noreferrer">Ouvrir ma boîte Proton <span>→</span></a></div>
 <div class="hero-art" aria-hidden="true"><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="mail-card"><img src="./icons/icon.svg" alt=""><div class="mail-lines"><i></i><i></i><i></i></div><div class="mail-stamp">✦</div></div><div class="floating-chip chip-one">Simple &amp; privé</div><div class="floating-chip chip-two">AffiAds Mail</div></div></section>
-<section class="section" id="adresse"><div class="section-heading"><div><p class="eyebrow">ÉTAPE 01</p><h2>Créer ton adresse e-mail</h2></div><span class="step-tag">À configurer</span></div>
-<p class="section-intro">Pour obtenir une vraie adresse, choisis un fournisseur. Une adresse sur ton propre domaine (ex. <code>toi@tonnom.fr</code>) nécessite un nom de domaine que tu possèdes.</p>
+<section class="section" id="adresse"><div class="section-heading"><div><p class="eyebrow">ÉTAPE 01</p><h2>Ton adresse Proton</h2></div><span class="step-tag">Compte gratuit</span></div>
+<p class="section-intro">Ton compte Proton est prêt : utilise le bouton ci-dessous pour ouvrir ta vraie boîte mail. AffiAds Mail ne te demandera jamais ton mot de passe.</p>
+<div class="access-panel"><div class="provider-logo proton">P</div><div class="access-copy"><h3>Proton Mail</h3><p>Messagerie privée. Connecte-toi sur le site officiel Proton pour lire et gérer tes messages.</p></div><div class="access-actions"><a class="primary-btn" href="https://mail.proton.me/" target="_blank" rel="noopener noreferrer">Ouvrir ma boîte Proton ↗</a></div></div>
+<div class="notice"><span class="notice-icon">i</span><p><b>À savoir :</b> le compte Proton gratuit ne permet pas une intégration directe simple dans cette application GitHub Pages. Pour le moment, le bouton ouvre la vraie messagerie Proton dans le navigateur.</p></div></section>
+<section class="section" id="connexion"><div class="section-heading"><div><p class="eyebrow">ÉTAPE 02</p><h2>Accès rapide</h2></div></div>
 <div class="provider-grid">
-<article class="provider-card"><div class="provider-logo proton">P</div><div class="provider-copy"><h3>Proton Mail</h3><p>Une option orientée confidentialité, avec une offre gratuite selon les conditions du fournisseur.</p><a href="https://proton.me/mail" target="_blank" rel="noopener noreferrer">Découvrir Proton Mail ↗</a></div></article>
-<article class="provider-card"><div class="provider-logo outlook">O</div><div class="provider-copy"><h3>Outlook</h3><p>Créer une adresse Microsoft et utiliser sa boîte de réception en ligne.</p><a href="https://outlook.live.com/" target="_blank" rel="noopener noreferrer">Découvrir Outlook ↗</a></div></article>
-<article class="provider-card"><div class="provider-logo gmail">M</div><div class="provider-copy"><h3>Gmail</h3><p>Créer une adresse Google et consulter tes messages en ligne.</p><a href="https://mail.google.com/" target="_blank" rel="noopener noreferrer">Découvrir Gmail ↗</a></div></article>
+<article class="provider-card"><div class="provider-logo proton">P</div><div class="provider-copy"><h3>Boîte de réception</h3><p>Consulte tes messages directement chez Proton.</p><a href="https://mail.proton.me/u/0/inbox" target="_blank" rel="noopener noreferrer">Ouvrir la réception ↗</a></div></article>
+<article class="provider-card"><div class="provider-logo proton">✎</div><div class="provider-copy"><h3>Nouveau message</h3><p>Ouvre Proton pour rédiger et envoyer un message.</p><a href="https://mail.proton.me/" target="_blank" rel="noopener noreferrer">Écrire un e-mail ↗</a></div></article>
+<article class="provider-card"><div class="provider-logo proton">↗</div><div class="provider-copy"><h3>Compte Proton</h3><p>Gère tes paramètres, ton compte et ta sécurité sur le site officiel.</p><a href="https://account.proton.me/" target="_blank" rel="noopener noreferrer">Gérer mon compte ↗</a></div></article>
 </div>
-<div class="notice"><span class="notice-icon">i</span><p><b>À savoir :</b> GitHub Pages héberge l’interface mais ne crée pas de boîte mail. Une adresse comme <code>toi@tondomaine.fr</code> nécessite un domaine et un fournisseur de messagerie.</p></div></section>
-<section class="section" id="connexion"><div class="section-heading"><div><p class="eyebrow">ÉTAPE 02</p><h2>Connecter Outlook</h2></div><span id="authBadge" class="step-tag">Non connecté</span></div>
-<p class="section-intro">Connecte-toi à Microsoft pour lire, rechercher et envoyer tes e-mails dans AffiAds Mail. L'authentification se fait sur Microsoft ; ton mot de passe n'est jamais saisi dans cette page.</p>
-<div class="mail-controls">
-<div class="mail-toolbar"><button id="connectBtn" class="primary-btn">Connecter mon compte Outlook ↗</button><button id="disconnectBtn" class="secondary-btn" hidden>Se déconnecter</button></div>
-<p id="authStatus" class="small-muted" role="status">Une configuration Microsoft est nécessaire avant la première connexion.</p>
-<div id="mailWorkspace" hidden>
-<div class="mail-toolbar search-toolbar"><input id="searchInput" type="search" placeholder="Rechercher dans mes e-mails" aria-label="Rechercher dans mes e-mails"><button id="searchBtn" class="secondary-btn">Rechercher</button><button id="refreshBtn" class="secondary-btn">Actualiser</button></div>
-<div class="mail-columns"><div><h3>Messages reçus</h3><div id="messageList" class="message-list"><p class="small-muted">Connecte-toi pour afficher tes messages.</p></div></div>
-<div class="message-view"><h3 id="messageTitle">Lire un message</h3><p id="messageMeta" class="small-muted"></p><div id="messageBody" class="message-body">Sélectionne un message dans la liste.</div></div></div>
-<form id="sendForm" class="send-form"><h3>Nouveau message</h3><label for="toInput">Destinataire</label><input id="toInput" type="email" required placeholder="destinataire@exemple.fr"><label for="subjectInput">Objet</label><input id="subjectInput" required maxlength="250" placeholder="Objet du message"><label for="bodyInput">Message</label><textarea id="bodyInput" required rows="5" placeholder="Écris ton message…"></textarea><button class="primary-btn" type="submit">Envoyer l’e-mail</button></form>
-</div></div>
-<div class="notice"><span class="notice-icon">i</span><p>La connexion réelle nécessite l’identifiant public d’une application Microsoft configurée pour cette URL. Aucun secret client ne doit être ajouté au dépôt. Les e-mails sont récupérés depuis Microsoft Graph et ne sont pas enregistrés dans GitHub.</p></div></section>
-<section class="section privacy-section" id="confidentialite"><div class="privacy-icon">⌑</div><div><h2>Ta vie privée d’abord</h2><p>AffiAds Mail ne stocke aucun mot de passe ni secret client. La connexion Outlook passe par Microsoft. Les messages sont chargés depuis Microsoft Graph pour cette session.</p></div></section>
+<p class="small-muted">La connexion, la lecture et l'envoi sont gérés par Proton. AffiAds Mail ne stocke aucun message ni identifiant.</p></section>
+<section class="section privacy-section" id="confidentialite"><div class="privacy-icon">⌑</div><div><h2>Ta vie privée d’abord</h2><p>AffiAds Mail ne stocke aucun mot de passe, identifiant ni message. La connexion et la gestion des e-mails s’effectuent sur le site officiel de Proton.</p></div></section>
 <footer class="footer"><span>AffiAds <b>Mail</b><i>.</i></span><span>Sans IA · Aucun identifiant enregistré · Version de départ</span></footer>
 </main></div>
 
-<script src="https://alcdn.msauth.net/browser/3.26.1/js/msal-browser.min.js" defer></script>
-<script src="https://alcdn.msauth.net/browser/2.38.4/js/msal-browser.min.js" defer></script>
 <script src="./app.js" defer></script>
 </body></html>
